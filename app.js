@@ -52,7 +52,8 @@ const subscribeRoute = require('./routes/subscribeRoute');
 const { protect } = require('./middleware/auth');
 
 // Use routes
-app.use('/', registerRoute);
+app.post('/', registerRoute);
+//app.use('/', registerRoute);
 app.use('/', loginRoute);
 app.use('/', subscribeRoute);
 
